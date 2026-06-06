@@ -13,3 +13,11 @@ This was created for **Workshop #2** of PlatformCon: <br/>
 - Learn how to secure your IDPs against evolving dependency threats
 
 ## Part 1: Ollama & Hugging Face
+
+
+## PlatformCon 2026 Workshops
+
+1. [Hunting compromised software dependencies inside Kubernetes workloads](https://github.com/ndouglas-cloudsmith/compromised-dependencies-kubernetes/tree/main)
+2. **[AI agents & platform engineering: Efficiency boost or new source of trouble?](https://github.com/ndouglas-cloudsmith/AI-agents-platform-engineering)**
+3. [Audit-ready Kubernetes: How to leverage policy-as-code for continuous compliance](https://github.com/ndouglas-cloudsmith/audit-ready-kubernetes/tree/main)
+4. [The ghost in the machine: Securing AI agent skills](https://github.com/ndouglas-cloudsmith/ghost-in-the-machine/tree/main)
