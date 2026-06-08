@@ -39,7 +39,10 @@ However, some people in the Hub are not good actors. Many models are deliberatel
 
 #### AI-BOMs
 
-Similar to Software Bill of Material (SBOM), an AI-specific BOM exports a report of who made a model, how they built the model, and when they built the model: <br/>
+Similar to Software Bill of Material (SBOM), an AI-specific BOM exports a report of: 
+- Who made a model
+- How they built the model
+- When they built the model
 ```https://huggingface.co/spaces/GenAISecurityProject/OWASP-AIBOM-Generator``` <br/>
 <br/>
 In this task, we'll go to the above URL to scan the following Hugging Face model ```Pankaj001/malicious-artifact```. It's worth noting that models can contain vulnerable dependencies: <br/>
