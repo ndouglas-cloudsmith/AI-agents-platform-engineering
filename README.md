@@ -35,7 +35,15 @@ ollama pull hf.co/bartowski/Qwen2-0.5B-Instruct-GGUF
 ```
 
 In the case of the Hugging Face creator **[bartowski](https://huggingface.co/bartowski)**, he's an ethical security researcher, and all of his models are known to be safe. <br/>
-However, some people in the Hugging Face Hub are not good actors. Many models are deliberately malicious in nature according to **[ProtectAI](https://protectai.com/insights/models?status=UNSAFE&query=malicious)**.
+However, some people in the Hub are not good actors. Many models are deliberately malicious according to **[ProtectAI](https://protectai.com/insights/models?status=UNSAFE&query=malicious)**.
+
+#### AI-BOMs
+
+Similar to Software Bill of Material (SBOM), an AI-specific BOM exports a report of who made a model, how they built the model, and when they built the model: <br/>
+```https://huggingface.co/spaces/GenAISecurityProject/OWASP-AIBOM-Generator``` <br/>
+<br/>
+In this task, we'll go to the above URL to scan the following Hugging Face model ```Pankaj001/malicious-artifact```. It's worth noting that models can contain vulnerable dependencies: <br/>
+```https://huggingface.co/Pankaj001/malicious-artifact/blob/main/sample_notebook_files/classification_notebook.ipynb```
 
 
 ## Part 2: Malicious AI Skills
