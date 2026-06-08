@@ -34,6 +34,10 @@ Pull an open source ```GGUF``` formatted model from the **[Hugging Face Registry
 ollama pull hf.co/bartowski/Qwen2-0.5B-Instruct-GGUF
 ```
 
+In the case of the Hugging Face creator **[bartowski](https://huggingface.co/bartowski)**, he's an ethical security researcher, and all of his models are known to be safe. <br/>
+However, some people in the Hugging Face Hub are not good actors. Many models are deliberately malicious in nature according to **[ProtectAI](https://protectai.com/insights/models?status=UNSAFE&query=malicious)**.
+
+
 ## PlatformCon 2026 Workshops
 
 1. [Hunting compromised software dependencies inside Kubernetes workloads](https://github.com/ndouglas-cloudsmith/compromised-dependencies-kubernetes/tree/main)
