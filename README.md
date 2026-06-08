@@ -43,7 +43,7 @@ Similar to Software Bill of Material (SBOM), an AI-specific BOM exports a report
 - Who made a model
 - How they built the model
 - When they built the model
-<br/>
+
 https://huggingface.co/spaces/GenAISecurityProject/OWASP-AIBOM-Generator <br/>
 <br/>
 In this task, we'll go to the above URL to scan the following Hugging Face model **Pankaj001/malicious-artifact**. <br/>
