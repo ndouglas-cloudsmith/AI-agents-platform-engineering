@@ -14,6 +14,25 @@ This was created for **Workshop #2** of PlatformCon: <br/>
 
 ## Part 1: Ollama & Hugging Face
 
+Let's start off by installing **[Ollama](https://ollama.com/download)** on MacOS, Windows, or Linux (if you're following these instructions in Instruqt).
+```
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+List the models currently being used by Ollama:
+```
+ollama ls
+```
+
+Pull an open source model from the **[Ollama Registry](https://ollama.com/library)**:
+```
+ollama pull qwen2:0.5b
+```
+
+Pull an open source ```GGUF``` formatted model from the **[Hugging Face Registry](https://huggingface.co/models?num_parameters=min:0,max:3B&library=gguf&search=bartowski)**:
+```
+ollama pull hf.co/bartowski/Qwen2-0.5B-Instruct-GGUF
+```
 
 ## PlatformCon 2026 Workshops
 
