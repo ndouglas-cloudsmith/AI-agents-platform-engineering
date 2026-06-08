@@ -44,11 +44,11 @@ Similar to Software Bill of Material (SBOM), an AI-specific BOM exports a report
 - How they built the model
 - When they built the model
 <br/>
-```https://huggingface.co/spaces/GenAISecurityProject/OWASP-AIBOM-Generator``` <br/>
+https://huggingface.co/spaces/GenAISecurityProject/OWASP-AIBOM-Generator <br/>
 <br/>
 In this task, we'll go to the above URL to scan the following Hugging Face model ```Pankaj001/malicious-artifact```. <br/>
 It's worth noting that models can contain vulnerable dependencies: <br/>
-```https://huggingface.co/Pankaj001/malicious-artifact/blob/main/sample_notebook_files/classification_notebook.ipynb```
+https://huggingface.co/Pankaj001/malicious-artifact/blob/main/sample_notebook_files/classification_notebook.ipynb
 
 
 ## Part 2: Malicious AI Skills
