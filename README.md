@@ -38,6 +38,9 @@ In the case of the Hugging Face creator **[bartowski](https://huggingface.co/bar
 However, some people in the Hugging Face Hub are not good actors. Many models are deliberately malicious in nature according to **[ProtectAI](https://protectai.com/insights/models?status=UNSAFE&query=malicious)**.
 
 
+## Part 2: Malicious AI Skills
+
+
 ## PlatformCon 2026 Workshops
 
 1. [Hunting compromised software dependencies inside Kubernetes workloads](https://github.com/ndouglas-cloudsmith/compromised-dependencies-kubernetes/tree/main)
