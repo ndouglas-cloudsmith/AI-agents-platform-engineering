@@ -55,6 +55,9 @@ https://huggingface.co/Pankaj001/malicious-artifact/blob/main/sample_notebook_fi
 Agent skills are changing platform engineering. But are they secure? <br/>
 https://platformengineering.org/blog/agent-skills-are-changing-platform-engineering
 <br/><br/>
+Agentic AI projects like **OpenClaw** have their own dedicated registries for AI Skills. In the case of OpenClaw, it's **ClawHub**<br/>
+https://clawhub.ai
+<br/><br/>
 In this next task, we are going to use **Github Search**. Note: You'll need to be logged into a Github account to run these commands: <br/>
 https://github.com/search
 <br/><br/>
