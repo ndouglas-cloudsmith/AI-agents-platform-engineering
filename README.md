@@ -52,7 +52,23 @@ https://huggingface.co/Pankaj001/malicious-artifact/blob/main/sample_notebook_fi
 
 
 ## Part 2: Malicious AI Skills
-
+In this first task, we are going to use **Github Search**. Note: You'll need to be logged into a Github account to run these commands: <br/>
+https://github.com/search
+<br/><br/>
+Malicious AI tools might use ```Base64``` to hide shellcode, reverse shells, or malicious URLs so the LLM or early scanners don't catch the intent in plain text.
+<br/>
+- **[Sample One](https://github.com/compozy/agh/blob/1099164be7f7d4398129db062a464530e7b49751/.agents/skills/security-review/references/supply-chain.md?plain=1#L235)** - Looking for Base64 execution in Python-based skills:
+```
+"base64.b64decode" AND ("eval(" OR "exec(") path:skills
+```
+- Searching generic AI tool/plugin setups for decoded execution:
+```
+"b64decode" AND "subprocess" extension:py
+```
+- Targeting ```Node.js```/```TypeScript``` AI agents decoding strings on the fly:
+```
+"Buffer.from" AND "base64" AND "child_process" path:tools
+```
 
 ## PlatformCon 2026 Workshops
 
