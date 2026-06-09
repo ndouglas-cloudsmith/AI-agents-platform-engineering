@@ -52,7 +52,10 @@ https://huggingface.co/Pankaj001/malicious-artifact/blob/main/sample_notebook_fi
 
 
 ## Part 2: Malicious AI Skills
-In this first task, we are going to use **Github Search**. Note: You'll need to be logged into a Github account to run these commands: <br/>
+Agent skills are changing platform engineering. But are they secure? <br/>
+https://platformengineering.org/blog/agent-skills-are-changing-platform-engineering
+<br/><br/>
+In this next task, we are going to use **Github Search**. Note: You'll need to be logged into a Github account to run these commands: <br/>
 https://github.com/search
 <br/><br/>
 Malicious AI tools might use ```Base64``` to hide shellcode, reverse shells, or malicious URLs so the LLM or early scanners don't catch the intent in plain text.
@@ -61,14 +64,7 @@ Malicious AI tools might use ```Base64``` to hide shellcode, reverse shells, or 
 ```
 "base64.b64decode" AND ("eval(" OR "exec(") path:skills
 ```
-- Searching generic AI tool/plugin setups for decoded execution:
-```
-"b64decode" AND "subprocess" extension:py
-```
-- Targeting ```Node.js```/```TypeScript``` AI agents decoding strings on the fly:
-```
-"Buffer.from" AND "base64" AND "child_process" path:tools
-```
+
 
 ## PlatformCon 2026 Workshops
 
