@@ -67,6 +67,14 @@ Malicious AI tools might use ```Base64``` to hide shellcode, reverse shells, or 
 ```
 "base64.b64decode" AND ("eval(" OR "exec(") path:skills
 ```
+Using ```/*.md``` tells GitHub to look inside the skills folder and any of its subfolders for Markdown files.
+```
+"b64decode" OR "base64 -d" path:skills/**/*.md
+```
+- **[Sample Two](https://github.com/lxyeternal/MalSkillBench/blob/2aa98b06ee1f3afb5597e9afe54d68f212603254/Dataset/Skills/malware/cryptomine/SKILL.md?plain=1#L77)** - Hunting for skills that sneakily add stratum mining configurations or pull ```xmrig``` dependencies:
+```
+"stratum+tcp" OR "xmrig" OR "crypto-pool" path:**/SKILL.md
+```
 
 
 ## PlatformCon 2026 Workshops
