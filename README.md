@@ -161,6 +161,13 @@ osv-scanner --lockfile=package-lock.json
 ```
 
 <img width="1394" height="1167" alt="Screenshot 2026-06-10 at 15 06 58" src="https://github.com/user-attachments/assets/a910ac41-ed9d-4ab5-9286-e0eaa2554b4d" />
+<br/><br/>
+Can you find the malicious package in this specific version of the AI Platform?
+```
+rm package-lock.json
+wget https://raw.githubusercontent.com/ndouglas-cloudsmith/AI-agents-platform-engineering/refs/heads/main/Lockfile/package-lock.json
+osv-scanner --lockfile=package-lock.json
+```
 
 
 <br/><br/>
