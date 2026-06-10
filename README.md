@@ -170,6 +170,9 @@ wget https://raw.githubusercontent.com/ndouglas-cloudsmith/AI-agents-platform-en
 osv-scanner --lockfile=package-lock.json
 ```
 
+<img width="1394" height="1167" alt="Screenshot 2026-06-10 at 16 18 48" src="https://github.com/user-attachments/assets/044a97ac-ba46-45a9-b5f3-89ec41abd898" />
+
+
 
 <br/><br/>
 ## PlatformCon 2026 Workshops
