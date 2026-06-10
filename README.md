@@ -24,6 +24,7 @@ List the models currently being used by Ollama:
 ollama ls
 ```
 
+
 Pull an open source model from the **[Ollama Registry](https://ollama.com/library)**:
 ```
 ollama pull qwen2:0.5b
