@@ -99,6 +99,18 @@ curl -s -X POST https://api.osv.dev/v1/query -d '{
   "version":"1.161.12"
 }' -H 'Content-Type: application/json' | jq .
 ```
+
+You probably noticed that the last output was **pretty long**. To get the entire Malicious Object (details included), you'll want the entire structure for only the ```MAL-``` vulnerability info.
+```
+curl -s -X POST https://api.osv.dev/v1/query -d '{
+  "package": {
+    "ecosystem":"npm",
+    "name":"@tanstack/history"
+  },
+  "version":"1.161.12"
+}' -H 'Content-Type: application/json' | jq '.vulns[] | select(.id | startswith("MAL-"))'
+```
+
 <br/><br/>
 ## PlatformCon 2026 Workshops
 
