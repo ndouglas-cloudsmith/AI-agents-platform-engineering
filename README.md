@@ -157,11 +157,11 @@ We didn't find any malware in this case. Only a few outstanding security advisto
 Even though it's the project you are looking to replace, Backstage's repository houses the default workspace template used by thousands of companies. You can download Backstage's main ```package-lock.json``` (Note: they use ```yarn```, but maintain a seed ```package-lock``` file that we'll scan).
 ```
 wget https://raw.githubusercontent.com/backstage/backstage/master/package.json
-osv-scanner scan -L package.json
+osv-scanner scan source -r .
 ```
 ```
 wget https://raw.githubusercontent.com/lyret/frontstage/refs/heads/main/package-lock.json
-osv-scanner scan -L package-lock.json
+osv-scanner scan source -r .
 ```
 
 <br/><br/>
