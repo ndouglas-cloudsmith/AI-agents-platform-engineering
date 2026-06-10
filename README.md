@@ -88,8 +88,18 @@ Using ```/*.md``` tells GitHub to look inside the skills folder and any of its s
 **[Backstage](https://github.com/backstage/backstage/blob/master/.npmrc)** for example, uses npmjs (Node.js Package Manager) to pull software dependencies into the IDP. <br/>
 It's no secret that the **[npm registry](https://opensourcemalware.com/?type=package&ecosystem=npm)** has been a high-value target from threat actors such as **[TeamPCP](https://malpedia.caad.fkie.fraunhofer.de/actor/teampcp)**.
 <br/><br/>
+OSV’s API accepts a JSON body with ```package``` and (optionally) ```version```. If you supply ```version``` OSV will return only vulnerabilities (or known malicious packages) that actually match that specific version (or none if it doesn’t match).
 
-
+```
+curl -s -X POST https://api.osv.dev/v1/query -d '{
+  "package": {
+    "ecosystem":"npm",
+    "name":"@tanstack/history"
+  },
+  "version":"1.161.12"
+}' -H 'Content-Type: application/json' | jq .
+```
+<br/><br/>
 ## PlatformCon 2026 Workshops
 
 1. [Hunting compromised software dependencies inside Kubernetes workloads](https://github.com/ndouglas-cloudsmith/compromised-dependencies-kubernetes/tree/main)
