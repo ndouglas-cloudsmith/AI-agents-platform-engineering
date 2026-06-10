@@ -122,6 +122,9 @@ curl -s -X POST https://api.osv.dev/v1/query -d '{
 }' -H 'Content-Type: application/json' | jq '.vulns[] | select(.id | startswith("MAL-")) | {id: .id, summary: .summary, affected_package: .affected[0].package.name}'
 ```
 
+**[MAL-2026-3463](https://osv.dev/vulnerability/MAL-2026-3463)** impacts the ```npm``` package ```@tanstack/history``` on version ```1.161.12``` and ```1.161.9```. <br/>
+The **[OpenSSF Malicious Package](https://github.com/ossf/malicious-packages/blob/main/osv/malicious/npm/@tanstack/history/MAL-2026-3463.json)** record is publicly-accessible on Github.
+
 <br/><br/>
 ## PlatformCon 2026 Workshops
 
