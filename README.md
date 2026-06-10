@@ -111,7 +111,7 @@ curl -s -X POST https://api.osv.dev/v1/query -d '{
 }' -H 'Content-Type: application/json' | jq '.vulns[] | select(.id | startswith("MAL-"))'
 ```
 
-Likewise, if you want to extract a clean summary (recommended for automation tasks in your IDP), without the 2MB block of text, use this filter:
+Likewise, if you want to extract a clean summary (recommended for automation tasks in your IDP), without a 2MB block of text, use this:
 ```
 curl -s -X POST https://api.osv.dev/v1/query -d '{
   "package": {
@@ -124,6 +124,21 @@ curl -s -X POST https://api.osv.dev/v1/query -d '{
 
 **[MAL-2026-3463](https://osv.dev/vulnerability/MAL-2026-3463)** impacts the ```npm``` package ```@tanstack/history``` on version ```1.161.12``` and ```1.161.9```. <br/>
 The **[OpenSSF Malicious Package](https://github.com/ossf/malicious-packages/blob/main/osv/malicious/npm/@tanstack/history/MAL-2026-3463.json)** record is publicly-accessible on Github.
+
+### backstage-plugin-glean
+
+According to the **[GitHub Advisory Database](https://github.com/advisories/GHSA-86v9-6365-r69x)** (```GHSA```), malware had been found in ```backstage-plugin-glean``` npm package:
+```
+curl -s https://api.osv.dev/v1/vulns/GHSA-86v9-6365-r69x | jq .
+```
+
+Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.
+```
+curl -s https://api.osv.dev/v1/vulns/MAL-2025-192944 | jq .
+```
+
+<img width="1316" height="1135" alt="Screenshot 2026-06-10 at 11 11 28" src="https://github.com/user-attachments/assets/d0e3c16c-bae6-4f53-88a2-da22026506fc" />
+
 
 <br/><br/>
 ## PlatformCon 2026 Workshops
