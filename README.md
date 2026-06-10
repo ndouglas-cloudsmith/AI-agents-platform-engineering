@@ -111,6 +111,17 @@ curl -s -X POST https://api.osv.dev/v1/query -d '{
 }' -H 'Content-Type: application/json' | jq '.vulns[] | select(.id | startswith("MAL-"))'
 ```
 
+Likewise, if you want to extract a clean summary (recommended for automation tasks in your IDP), without the 2MB block of text, use this filter:
+```
+curl -s -X POST https://api.osv.dev/v1/query -d '{
+  "package": {
+    "ecosystem":"npm",
+    "name":"@tanstack/history"
+  },
+  "version":"1.161.12"
+}' -H 'Content-Type: application/json' | jq '.vulns[] | select(.id | startswith("MAL-")) | {id: .id, summary: .summary, affected_package: .affected[0].package.name}'
+```
+
 <br/><br/>
 ## PlatformCon 2026 Workshops
 
