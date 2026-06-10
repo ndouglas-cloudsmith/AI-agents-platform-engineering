@@ -154,8 +154,7 @@ osv-scanner scan -L yarn.lock
 
 We didn't find any malware in this case. Only a few outstanding security advistories in the Backstage project.
 
-Even though it's the project you are looking to replace, Backstage's repository houses the default workspace template used by thousands of companies. <br/>
-You can download Backstage's main ```package-lock.json``` (Note: they use ```yarn```, but maintain a seed ```package-lock``` file that we'll scan).
+Even though it's the project you are looking to replace, Backstage's repository houses the default workspace template used by thousands of companies. You can download Backstage's main ```package-lock.json``` (Note: they use ```yarn```, but maintain a seed ```package-lock``` file that we'll scan).
 ```
 wget https://raw.githubusercontent.com/backstage/backstage/master/package.json
 wget -O package-lock.json https://raw.githubusercontent.com/backstage/backstage/master/package-lock.json
