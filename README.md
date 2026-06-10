@@ -24,7 +24,6 @@ List the models currently being used by Ollama:
 ollama ls
 ```
 
-
 Pull an open source model from the **[Ollama Registry](https://ollama.com/library)**:
 ```
 ollama pull qwen2:0.5b
@@ -160,6 +159,9 @@ We didn't find any malware in this case. Only a few outstanding security advisto
 wget https://raw.githubusercontent.com/lyret/frontstage/refs/heads/main/package-lock.json
 osv-scanner --lockfile=package-lock.json
 ```
+
+<img width="1394" height="1167" alt="Screenshot 2026-06-10 at 15 06 58" src="https://github.com/user-attachments/assets/a910ac41-ed9d-4ab5-9286-e0eaa2554b4d" />
+
 
 <br/><br/>
 ## PlatformCon 2026 Workshops
