@@ -151,6 +151,10 @@ mv seed-yarn.lock yarn.lock
 osv-scanner scan -L yarn.lock
 ```
 
+<img width="1316" height="1002" alt="Screenshot 2026-06-10 at 11 26 36" src="https://github.com/user-attachments/assets/2ca7041d-b03d-4109-9120-f5446504e55a" />
+<br/><br/>
+**We didn't find any malware in this case**. Only a few outstanding security advistories in the Backstage project (mostly for the ```protobufjs``` npm package)
+
 <br/><br/>
 ## PlatformCon 2026 Workshops
 
