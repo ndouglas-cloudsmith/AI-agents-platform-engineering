@@ -85,8 +85,8 @@ Using ```/*.md``` tells GitHub to look inside the skills folder and any of its s
 ```
 
 ## Part 3: Secure your IDPs against evolving dependency threats
-**[Backstage](https://github.com/backstage/backstage/blob/master/.npmrc) for example, uses npmjs (Node.js Package Manager) to pull software dependencies into the IDP. <br/>
-It's no secret that the ***[npm registry](https://opensourcemalware.com/?type=package&ecosystem=npm)** has been a high-value target from threat actors such as **[TeamPCP](https://malpedia.caad.fkie.fraunhofer.de/actor/teampcp)**.
+**[Backstage](https://github.com/backstage/backstage/blob/master/.npmrc)** for example, uses npmjs (Node.js Package Manager) to pull software dependencies into the IDP. <br/>
+It's no secret that the **[npm registry](https://opensourcemalware.com/?type=package&ecosystem=npm)** has been a high-value target from threat actors such as **[TeamPCP](https://malpedia.caad.fkie.fraunhofer.de/actor/teampcp)**.
 <br/><br/>
 
 
