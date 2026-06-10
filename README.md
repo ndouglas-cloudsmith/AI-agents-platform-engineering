@@ -138,10 +138,17 @@ curl -s https://api.osv.dev/v1/vulns/MAL-2025-192944 | jq .
 ```
 
 <img width="1316" height="1135" alt="Screenshot 2026-06-10 at 11 11 28" src="https://github.com/user-attachments/assets/d0e3c16c-bae6-4f53-88a2-da22026506fc" />
+<br/><br/>
 
 Naturally, it's in our interest to scan the ```npm``` **[backstage-plugin-catalog](https://www.npmjs.com/package/@backstage-community/plugin-npm)** for known, malicious packages - whether they're AI or not. <br/>
 Backstage manages and updates these open-source, ```npm``` software dependencies via ```.lock``` files - **[SAMPLE ONE](https://github.com/backstage/backstage/blob/f9567df88c08d6a3077298e7b0a5b9acefee9ee2/packages/create-app/seed-yarn.lock#L4)**
 
+### Scanning lockfiles in OSV-Scanner
+In a **[previous session](https://github.com/ndouglas-cloudsmith/compromised-dependencies-kubernetes/blob/main/README.md#part-1-poisoning-a-kubernetes-workload)**, we discussed using **[osv-scanner](https://google.github.io/osv-scanner/usage/scan-image)** to scan container images for potential malware. In this workflow, we are going to download and scan the Backstage .lock file for malicious code and vulnerabilities.
+```
+wget https://raw.githubusercontent.com/backstage/backstage/f9567df88c08d6a3077298e7b0a5b9acefee9ee2/packages/create-app/seed-yarn.lock
+osv-scanner scan -L seed-yarn.lock
+```
 
 <br/><br/>
 ## PlatformCon 2026 Workshops
