@@ -172,6 +172,24 @@ osv-scanner --lockfile=package-lock.json
 
 <img width="1394" height="1167" alt="Screenshot 2026-06-10 at 16 18 48" src="https://github.com/user-attachments/assets/044a97ac-ba46-45a9-b5f3-89ec41abd898" />
 
+Filter only for malicious package (```MAL-```) advisories:
+```
+osv-scanner scan --format json --lockfile=package-lock.json | jq '
+  .results[].packages[] 
+  | .package.name as $pkg 
+  | .vulnerabilities[] 
+  | select(.id | startswith("MAL-")) 
+  | {package: $pkg, mal_id: .id, summary: .summary}
+'
+```
+
+If you need to feed the filtered JSON into another automated tool or CI/CD step, this maintains the original schema but purges ```CVE-``` or ```GHSA-``` advisories:
+```
+osv-scanner scan --format json --lockfile=package-lock.json | jq '
+  .results[].packages[].vulnerabilities |= map(select(.id | startswith("MAL-"))) 
+  | .results[].packages |= map(select(.vulnerabilities | length > 0))
+'
+```
 
 
 <br/><br/>
