@@ -85,10 +85,22 @@ Using ```/*.md``` tells GitHub to look inside the skills folder and any of its s
 ```
 
 ### Caterpillar
+Snyk Finds Prompt Injection in 36%, 1467 Malicious Payloads in a ToxicSkills Study of Agent Skills Supply Chain Compromise: <br/>
+https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub
+
+
 Before you install, make sure it's safe. **[Caterpillar](https://caterpillar.alice.io)** scans every skill before it can cause any harm.
 ```
 curl -fsSL caterpillar.alice.io/d/i.sh | sh
 ```
+
+We can test out some skills from the **[awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills/tree/main/categories)** repository on Github:
+```
+wget https://raw.githubusercontent.com/VoltAgent/awesome-openclaw-skills/refs/heads/main/categories/security-and-passwords.md
+caterpillar scan security-and-passwords.md
+```
+<img width="1169" height="618" alt="Screenshot 2026-06-12 at 11 25 00" src="https://github.com/user-attachments/assets/a66951e6-cd36-4df1-8e1f-db3503f9f5bc" />
+
 
 
 ## Part 3: Secure your IDPs against evolving dependency threats
