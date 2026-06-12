@@ -123,9 +123,19 @@ caterpillar scan max-severity-workflow.md --verbose
 
 <img width="1565" height="1068" alt="Screenshot 2026-06-12 at 11 46 37" src="https://github.com/user-attachments/assets/c83608dc-d0e3-480a-9ace-bf18f64f2e92" />
 
+According to the **[offical Github project](https://github.com/alice-dot-io/caterpillar)**, detects the below activity:
+- Credential theft (SSH keys, AWS credentials, API tokens)
+- Data exfiltration (curl/wget to external servers)
+- Persistence mechanisms (crontab, startup scripts)
+- Crypto wallet theft
+- Network attacks
+- Code obfuscation (base64, hex encoding)
+- Overly broad permissions
+- Supply chain attacks (postinstall hooks, remote script execution)
 
 
-## Part 3: Secure your IDPs against evolving dependency threats
+
+## Part 3: Secure your IDPs against Supply chain attacks
 **[Backstage](https://github.com/backstage/backstage/blob/master/.npmrc)** for example, uses npmjs (Node.js Package Manager) to pull software dependencies into the IDP. <br/>
 It's no secret that the **[npm registry](https://opensourcemalware.com/?type=package&ecosystem=npm)** has been a high-value target from threat actors such as **[TeamPCP](https://malpedia.caad.fkie.fraunhofer.de/actor/teampcp)**.
 <br/><br/>
