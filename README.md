@@ -153,6 +153,9 @@ To scan the current directory
 ./skills-loop.sh
 ```
 
+<img width="1133" height="1308" alt="Screenshot 2026-06-12 at 13 42 28" src="https://github.com/user-attachments/assets/12bd38a5-548a-421b-9dbe-2b9816ed6ed4" />
+
+
 
 ## Part 3: Secure your IDPs against Supply chain attacks
 **[Backstage](https://github.com/backstage/backstage/blob/master/.npmrc)** for example, uses npmjs (Node.js Package Manager) to pull software dependencies into the IDP. <br/>
