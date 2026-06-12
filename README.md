@@ -205,6 +205,16 @@ osv-scanner scan --format json --lockfile=package-lock.json | jq '
 '
 ```
 
+### Kratix
+Kratix by **[Syntasso](https://github.com/syntasso/kratix/blob/main/go.mod)** is built in ```Go```. In this scenario, we scan the ```go.mod``` file:
+```
+wget https://raw.githubusercontent.com/syntasso/kratix/refs/heads/main/go.mod
+osv-scanner scan -L go.mod
+```
+
+Looks clean!
+<img width="1501" height="216" alt="Screenshot 2026-06-12 at 11 06 11" src="https://github.com/user-attachments/assets/87e1b193-fae1-4def-a90b-425447329558" />
+
 
 <br/><br/>
 ## PlatformCon 2026 Workshops
