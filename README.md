@@ -134,10 +134,10 @@ According to the **[offical Github project](https://github.com/alice-dot-io/cate
 - Supply chain attacks (postinstall hooks, remote script execution)
 
 When building a platform, you are likely not going to scan individual skills. Instead, you'll scan an entire directory. <br/>
-Likewise, you'll probably want the output in json format, as we will discuss further in the supply chain security section.
+Likewise, you'll probably want the output in ```json``` format, as we will discuss further in the supply chain security section.
 
 ```
-caterpillar ask max-severity-workflow.md --json
+caterpillar scan ./Platform_Engineering/ --json
 ```
 
 ## Part 3: Secure your IDPs against Supply chain attacks
