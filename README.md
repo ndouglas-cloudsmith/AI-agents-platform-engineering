@@ -112,6 +112,17 @@ caterpillar scan mock-malicious-workflow.md --verbose
 
 <img width="1567" height="1133" alt="Screenshot 2026-06-12 at 11 37 02" src="https://github.com/user-attachments/assets/8d16e215-c0ae-46ee-aa88-b995e853ee3a" />
 
+- Explicitly naming things like ```STRIPE_API_KEY```, ```JWT_SECRET```, and ```/etc/shadow``` often triggers independent regex patterns for credential/secret theft.
+- Likewise, classic Shell Exploitation Phrases such as the inclusion of ```/dev/tcp/...``` and ```nc -e /bin/bash``` are universal signatures for reverse shell detection in static scanners.
+- Finally, privilege escalation patterns such as modifying ```/etc/sudoers``` or accessing ```/etc/passwd``` triggers system mods or privilege escalation" rules, which should carry heavy weightings in security grading systems.
+
+```
+wget https://raw.githubusercontent.com/ndouglas-cloudsmith/AI-agents-platform-engineering/refs/heads/main/AI-Skills/max-severity-workflow.md
+caterpillar scan max-severity-workflow.md --verbose
+```
+
+<img width="1565" height="1068" alt="Screenshot 2026-06-12 at 11 46 37" src="https://github.com/user-attachments/assets/c83608dc-d0e3-480a-9ace-bf18f64f2e92" />
+
 
 
 ## Part 3: Secure your IDPs against evolving dependency threats
