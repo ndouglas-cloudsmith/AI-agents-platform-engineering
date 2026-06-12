@@ -161,6 +161,13 @@ wget https://raw.githubusercontent.com/backstage/backstage/refs/heads/master/yar
 osv-scanner scan -L yarn.lock
 ```
 
+At the time of writing (June 12th 2026), there was a malicious package found in the official Backstage yarn.lock file. <br/>
+**[MAL-2022-6445](https://osv.dev/MAL-2022-6445)** was found in ```techdocs-cli-embedded-app```version ```0.0.0-use.local``` <br/>
+**[GHSA-jg5v-vjgm-vh8h](https://github.com/advisories/GHSA-jg5v-vjgm-vh8h)** mentions the CLI utility for managing TechDocs sites in Backstage.
+
+<img width="1309" height="1175" alt="Screenshot 2026-06-12 at 10 52 14" src="https://github.com/user-attachments/assets/af369f88-7785-410a-9076-00c3c45992e4" />
+
+
 ### FrontStage
 ```
 wget https://raw.githubusercontent.com/lyret/frontstage/refs/heads/main/package-lock.json
