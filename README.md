@@ -139,6 +139,20 @@ Likewise, you'll probably want the output in ```json``` format, as we will discu
 ```
 caterpillar scan ./Platform_Engineering/ --json
 ```
+This stopped after the first successful scan result, that's why I build a script that loops through all skills download:
+```
+wget https://raw.githubusercontent.com/ndouglas-cloudsmith/AI-agents-platform-engineering/refs/heads/main/skills-loop.sh
+chmod +x skills-loop.sh
+```
+To scan the ```Platform_Engineering``` folder:
+```
+./skills-loop.sh ./Platform_Engineering
+```
+To scan the current directory
+```
+./skills-loop.sh
+```
+
 
 ## Part 3: Secure your IDPs against Supply chain attacks
 **[Backstage](https://github.com/backstage/backstage/blob/master/.npmrc)** for example, uses npmjs (Node.js Package Manager) to pull software dependencies into the IDP. <br/>
