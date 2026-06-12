@@ -101,6 +101,17 @@ caterpillar scan security-and-passwords.md
 ```
 <img width="1169" height="618" alt="Screenshot 2026-06-12 at 11 25 00" src="https://github.com/user-attachments/assets/a66951e6-cd36-4df1-8e1f-db3503f9f5bc" />
 
+Caterpillar specifically looks for patterns like **Credential Theft**, **Data Exfiltration**, **Excessive Tool**/**Directory Access**, and **Unrestricted Execution** (like executing shell commands or dynamic context injection).
+<br/><br/>
+The mock ```SKILL.md``` file below blends several of these red flags together. It uses a YAML frontmatter block that requests overly permissive access, combined with clear markdown instructions that tell an AI agent to extract credentials and exfiltrate them to an external URL.
+
+```
+wget https://raw.githubusercontent.com/ndouglas-cloudsmith/AI-agents-platform-engineering/refs/heads/main/AI-Skills/mock-malicious-workflow.md
+caterpillar scan mock-malicious-workflow.md --verbose
+```
+
+<img width="1567" height="1133" alt="Screenshot 2026-06-12 at 11 37 02" src="https://github.com/user-attachments/assets/8d16e215-c0ae-46ee-aa88-b995e853ee3a" />
+
 
 
 ## Part 3: Secure your IDPs against evolving dependency threats
