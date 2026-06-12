@@ -133,7 +133,12 @@ According to the **[offical Github project](https://github.com/alice-dot-io/cate
 - Overly broad permissions
 - Supply chain attacks (postinstall hooks, remote script execution)
 
+When building a platform, you are likely not going to scan individual skills. Instead, you'll scan an entire directory. <br/>
+Likewise, you'll probably want the output in json format, as we will discuss further in the supply chain security section.
 
+```
+caterpillar ask max-severity-workflow.md --json
+```
 
 ## Part 3: Secure your IDPs against Supply chain attacks
 **[Backstage](https://github.com/backstage/backstage/blob/master/.npmrc)** for example, uses npmjs (Node.js Package Manager) to pull software dependencies into the IDP. <br/>
