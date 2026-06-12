@@ -152,7 +152,14 @@ osv-scanner scan -L yarn.lock
 ```
 <img width="1316" height="1002" alt="Screenshot 2026-06-10 at 11 26 36" src="https://github.com/user-attachments/assets/2ca7041d-b03d-4109-9120-f5446504e55a" />
 
-We didn't find any malware in this case. Only a few outstanding security advistories in the Backstage project.
+We didn't find any malware in this case. Only a few outstanding security advistories in the Backstage project. <br/>
+How about we instead download the entire ```yarn.lock``` file from the ```Backstage``` Github repository:
+
+```
+rm yarn.lock
+wget https://raw.githubusercontent.com/backstage/backstage/refs/heads/master/yarn.lock
+osv-scanner scan -L yarn.lock
+```
 
 ### FrontStage
 ```
