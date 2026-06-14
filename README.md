@@ -288,6 +288,24 @@ osv-scanner scan -L go.mod
 Looks clean!
 <img width="1501" height="216" alt="Screenshot 2026-06-12 at 11 06 11" src="https://github.com/user-attachments/assets/87e1b193-fae1-4def-a90b-425447329558" />
 
+### Slopgate
+
+**[Slopgate](https://github.com/nullracodes/slopgate)** is a CI gate designed to protect against slopsquatting and hallucinated dependencies for ```Python```, ```npm```, and ```Go```.
+```
+pip3 install git+https://github.com/nullracodes/slopgate --break-system-packages
+```
+
+<img width="1505" height="305" alt="Screenshot 2026-06-14 at 23 07 46" src="https://github.com/user-attachments/assets/43739bbf-40f6-46a2-be05-a926927cb3f3" />
+
+
+Download a Python ```requirements.txt``` file and scan it using ```slopgate```
+```
+wget https://raw.githubusercontent.com/ndouglas-cloudsmith/compromised-dependencies-kubernetes/refs/heads/main/requirements.txt
+slopgate scan requirements.txt
+```
+
+<img width="1505" height="561" alt="Screenshot 2026-06-14 at 23 15 05" src="https://github.com/user-attachments/assets/8a7ec7a5-c834-47fc-9549-7aadebccb5ad" />
+
 
 <br/><br/>
 ## PlatformCon 2026 Workshops
